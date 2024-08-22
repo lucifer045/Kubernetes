@@ -8,7 +8,7 @@ Process of Upgrade:
 
 (1) Check the Operating system you are working on:
 
-         cat /etc/*release*  (In this case Ubuntu is OS)
+         cat /etc/*release*  #In this case Ubuntu is OS
 
 (2) Check the current kubeadm version
 
