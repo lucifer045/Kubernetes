@@ -1,5 +1,7 @@
 ## UPGRADING kubeadm CLUSTER
 
+Point to be noted
+
 Upgrade Primary Control Plane node
 Upgrade additional control plane node
 Upgrade Worker nodes
