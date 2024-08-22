@@ -1,12 +1,12 @@
 ## UPGRADING kubeadm CLUSTER
 
-Point to be noted
+#Point to be noted
 
-Upgrade Primary Control Plane node
-Upgrade additional control plane node
-Upgrade Worker nodes
+=> Upgrade Primary Control Plane node
+=> Upgrade additional control plane node
+=> Upgrade Worker nodes
 
-Process of Upgrade:
+#Process of Upgrade:
 
 (1) Check the Operating system you are working on:
 
