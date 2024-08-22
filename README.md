@@ -52,7 +52,7 @@ Now upgrade the Kubernetes cluster
 
 (7) Uncordon the node
 
-   kubelet uncordon controlplane
+                 kubelet uncordon controlplane
 
 
 #### In the similar way upgrade the other nodes too.
