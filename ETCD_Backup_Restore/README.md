@@ -20,6 +20,8 @@
      --key=/etc/kubernetes/pki/etcd/server.key \
      snapshot save /opt/etcdboot.db
 
+   (snapshot save <backup_file_location>)   
+
 # Process to Restore ETCD
 
 (5) Restore etcd from the snapshot
@@ -30,6 +32,8 @@
      --cert=/etc/kubernetes/pki/etcd/server.crt \
      --key=/etc/kubernetes/pki/etcd/server.key \
      snapshot restore /opt/etcdboot.db
+
+   (snapshot restore <backup_file_location>)    
 
 (6) Now make changes in etcd.yaml file 
 
