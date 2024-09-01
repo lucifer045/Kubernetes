@@ -1,4 +1,4 @@
-#Process to Backup ETCD
+# Process to Backup ETCD
 
 (1) Check for endpoint on which ETCD is listening
 
@@ -20,7 +20,7 @@
      --key=/etc/kubernetes/pki/etcd/server.key \
      snapshot save /opt/etcdboot.db
 
-#Process to Restore ETCD
+# Process to Restore ETCD
 
 (5) Restore etcd from the snapshot
 
@@ -35,7 +35,7 @@
 
      vi /etc/kubernetes/manifests/etcd.yaml
 
-Change the --data-dir value and mountPath and Path 
+Update the --data-dir value, mountPath and Path of volume 
 
 (7) Verify 
 
