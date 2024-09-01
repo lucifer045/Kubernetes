@@ -12,28 +12,28 @@
 
 (4) Create the snapshot 
 
-   etcdctl --endpoints=https://127.0.0.1:2379 \
-   --cacert=/etc/kubernetes/pki/etcd/ca.crt \
-   --cert=/etc/kubernetes/pki/etcd/server.crt \
-   --key=/etc/kubernetes/pki/etcd/server.key \
-   snapshot save /opt/etcdboot.db
+     etcdctl --endpoints=https://127.0.0.1:2379 \
+     --cacert=/etc/kubernetes/pki/etcd/ca.crt \
+     --cert=/etc/kubernetes/pki/etcd/server.crt \
+     --key=/etc/kubernetes/pki/etcd/server.key \
+     snapshot save /opt/etcdboot.db
 
 (5) Restore etcd from the snapshot
 
-   etcdctl --data-dir="/var/lib/etcdboot" \
-  --endpoints=https://127.0.0.1:2379 \
-  --cacert=/etc/kubernetes/pki/etcd/ca.crt \
-  --cert=/etc/kubernetes/pki/etcd/server.crt \
-  --key=/etc/kubernetes/pki/etcd/server.key \
-  snapshot restore /opt/etcdboot.db
+     etcdctl --data-dir="/var/lib/etcdboot" \
+     --endpoints=https://127.0.0.1:2379 \
+     --cacert=/etc/kubernetes/pki/etcd/ca.crt \
+     --cert=/etc/kubernetes/pki/etcd/server.crt \
+     --key=/etc/kubernetes/pki/etcd/server.key \
+     snapshot restore /opt/etcdboot.db
 
 (6) Now make changes in etcd.yaml file 
 
-   vi /etc/kubernetes/manifests/etcd.yaml
+     vi /etc/kubernetes/manifests/etcd.yaml
 
 Change the --data-dir value and mountPath and Path 
 
 (7) Verify 
 
-   kubectl get pods
+     kubectl get pods
 
