@@ -1,3 +1,5 @@
+#Process to Backup ETCD#
+
 (1) Check for endpoint on which ETCD is listening
 
      cat /etc/kubernetes/manifests/etcd.yaml | grep listen
@@ -17,6 +19,8 @@
      --cert=/etc/kubernetes/pki/etcd/server.crt \
      --key=/etc/kubernetes/pki/etcd/server.key \
      snapshot save /opt/etcdboot.db
+
+#Process to Restore ETCD#
 
 (5) Restore etcd from the snapshot
 
